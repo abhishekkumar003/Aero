@@ -1,0 +1,34 @@
+/* CSS RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://lh3.googleusercontent.com/pw/AM-JKLU_oK-DZFnCuWjBjbZ2MB55YsFZLJfurdSL5ulXZEHLgfiKDCSIzH6P-R_E333_HDNbufEm_WdLqux6s7mWgOC0FgkblZatn_FxHcflrLSysIEgWMcDEVyQWGeL6YyFp16P-VbxXJVFqmTo3fZLjmzM=w1354-h903-no?authuser=0);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.aero{
+    width: 300px;
+    height: 200px;
+    position:absolute;
+    top: 5vh;
+    animation: flight 5s 1s infinite reverse linear both;
+}
+
+@keyframes flight{
+    from{
+        transform: translateX(0px);
+        top: 60vh;
+    }
+    to{
+        transform: translateX(1200px);
+    }
+}
